@@ -1,0 +1,77 @@
+<html>
+    <head>
+            <link rel="stylesheet" href="style.css">
+            <title>Web App - Simple Interest Calculator</title>
+    </head>
+
+    <body>
+        <main>
+                <div class="cal-wrapper">
+                        <div class="calc-head">
+                                <h1>Simple Interest Calculator</h1>
+                        </div>
+                        <div class="cal-body-wrapper">
+                                <div class="cal-body">
+                                        <div class="cal-item-wrapper">
+                                                <div class="item">Amount</div>
+                                                <div class="item-field principal-input" >
+                                                        <input type="text" id="principal">
+                                                </div>
+                                        </div>
+
+                                        <div class="cal-item-wrapper">
+                                                <div class="item">Interest Rate</div>
+                                                <div class="item-field">
+                                                        <input class="range" type="range" min="1" max="20" id="interest" onchange="getRange()" onload="getRange()">
+                                                        <div id="range-value"></div>
+                                                </div>
+                                        </div>
+
+                                        <div class="cal-item-wrapper">
+                                                <div class="item">No. of Years</div>
+                                                <div class="item-field-range">
+                                                <input class="item-field-select" type="number" id="years" min="1" max="20">
+                                                </div>
+                                        </div>
+                                        <button class="btn" onclick="compute()">Compute Interest</button>
+                                </div>
+                                
+                                
+                                <div class="cal-result" >
+                                        <div class="result-statement">
+                                                <p>If you deposite </p>
+                                                <div id="amt"></div>
+                                        </div>
+                                        
+                                        <div class="result-statement">
+                                                <p>at an interest rate of </p> 
+                                                <div id="rate"></div>
+                                        </div>
+                                        <div class="result-statement">
+                                                <p>you will receive an amount of </p>
+                                                <div id="result"></div>
+                                        </div>
+                                        <div class="result-statement">
+                                                <p>in the year </p>
+                                                <div id="yrs"></div>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="cal-footer">
+                                <div class="cal-footer-content">
+                                        <div class="c-logo">
+                                                C
+                                        </div>
+                                        <div class="content">
+                                                Everyone Can Get Rich
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </main>
+
+
+        
+        <script src="script.js"></script>
+    </body>
+</html>
