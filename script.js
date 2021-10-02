@@ -3,6 +3,7 @@ function compute(){
         var principal = document.getElementById("principal")
         var years = document.getElementById('years')
 
+
         if (principal.value < 1 ){
                 alert("Enter a Positive number!!")
         }
@@ -12,7 +13,7 @@ function compute(){
                 document.getElementById("rate").innerHTML = rate.value + "%"
                 document.getElementById("result").innerHTML = interest
                 document.getElementById("yrs").innerHTML =  new Date().getFullYear() + parseInt(years.value)
-        }
+        } 
 }
 
 function getRange(){
@@ -29,4 +30,4 @@ function yearsList(){
         }
 }
 onload(getRange());
-// onload(yearsList());
+// onload(yearsList())
