@@ -29,5 +29,4 @@ function yearsList(){
         }
 }
 onload(getRange());
-onload(yearsList());
-yes
+// onload(yearsList());
